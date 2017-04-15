@@ -26,19 +26,32 @@ import java.util.List;
  * Created by admin on 07.04.17.
  */
 public class LoginWindowController {
+
     private Stage stage;
     private Stage stage1;
+    private Stage stage2;
     private Parent root;
     private Parent root1;
+    private Parent root2;
     private MainWindowController mainController;
     private EmailSendWindowController emailController;
+    private SingUpController singUpController;
     private FXMLLoader loader = new FXMLLoader();
     private FXMLLoader loader1 = new FXMLLoader();
+    private FXMLLoader loader2 = new FXMLLoader();
     private Stage mainStage;
     public void setMainStage(Stage mainStage){this.mainStage=mainStage;}
     CollectionEmployeeList employeeList = new CollectionEmployeeList();
     SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
    public  Session session = sessionFactory.openSession();
+
+    @FXML
+    void linkClickCreate(MouseEvent event) {
+        Object source = event.getSource();
+        if(!(source instanceof Hyperlink))
+        {return;}
+        showSignUpDialog();
+    }
 
     @FXML
     private Button btnLogin;
@@ -73,6 +86,10 @@ public class LoginWindowController {
             loader1.setLocation(getClass().getResource("/Views/emailSendWindow.fxml"));
             root1=loader1.load();
             emailController= loader1.getController();
+
+            loader2.setLocation(getClass().getResource("/Views/createNewAccWindow.fxml"));
+            root2=loader2.load();
+            singUpController=loader2.getController();
         }
         catch (IOException e){
             System.out.println(e.toString());
@@ -123,6 +140,7 @@ public class LoginWindowController {
         if(!session.getTransaction().isActive()) {
             session.beginTransaction();
         }
+
         // AppUser user = new AppUser("firstuser");
        // Employee user = new Employee("alex", "shalin");
      //   session.save(user);
@@ -131,12 +149,12 @@ public class LoginWindowController {
         //session.getTransaction().commit();
         List<Employee> list = session.createCriteria(Employee.class).list();
         for (Employee j:list) {
-            if(j.getLogin().toString().equals(txtLogin.getText()) && j.getPassword().equals(txtPassword.getText()) && j.isActive()==true){
+            if(j.getLogin().toString().equals(txtLogin.getText()) && j.getPassword().equals(txtPassword.getText()) && j.getActive()==true){
                 flag=1;
                 employee=j;
                 break;
             }
-            else if(j.getLogin().toString().equals(txtLogin.getText()) && j.getPassword().equals(txtPassword.getText()) && j.isActive()!=true){
+            else if(j.getLogin().toString().equals(txtLogin.getText()) && j.getPassword().equals(txtPassword.getText()) && j.getActive()!=true){
                 flag=2;
                 break;
             }
@@ -195,6 +213,23 @@ public class LoginWindowController {
             stage1.initOwner(mainStage);
         }
         stage1.showAndWait();
+    }
+
+    private void showSignUpDialog()
+    {
+        if(stage2==null)
+        {
+            //Scene scene;
+            stage2=new Stage();
+            stage2.setTitle("Add Test");
+            stage2.setMinHeight(150);
+            stage2.setMinWidth(400);
+            stage2.setResizable(false);
+            stage2.setScene(new Scene(root2));
+            stage2.initModality(Modality.WINDOW_MODAL);
+            stage2.initOwner(mainStage);
+        }
+        stage2.showAndWait();
     }
 
 }

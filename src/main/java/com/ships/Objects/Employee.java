@@ -3,8 +3,8 @@ package com.ships.Objects;
 //import org.hibernate.annotations.GenerationTime;
 //import javax.*;
 import com.sun.org.apache.xpath.internal.operations.Bool;
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.property.*;
+import sun.java2d.pipe.SpanShapeRenderer;
 
 import javax.annotation.Generated;
 import javax.persistence.*;
@@ -20,38 +20,38 @@ import static javax.persistence.GenerationType.IDENTITY;
  * Created by admin on 04.04.17.
  */
 @Entity
+@Access(value = AccessType.PROPERTY)
 public class Employee {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private int id;
 
-    private String login;
-    private String password;
-    private String email;
-    private boolean active;
+    private SimpleStringProperty login = new SimpleStringProperty();
+    private SimpleStringProperty password = new SimpleStringProperty();
+    private SimpleStringProperty email = new SimpleStringProperty();
+    private SimpleBooleanProperty active = new SimpleBooleanProperty();
 
+    public StringProperty emailProperty(){return email;}
     public String getEmail() {
-        return email;
+        return email.get();
     }
-
     public void setEmail(String email) {
-        this.email = email;
+        this.email.set(email);
     }
 
-    public boolean isActive() {
-        return active;
+    public BooleanProperty activeProperty(){return active;}
+    public boolean getActive() {
+        return active.get();
     }
-
     public void setActive(boolean active) {
-        this.active = active;
+        this.active.set(active);
     }
 
     public Employee() {}
-    public Employee(String fname, String lname, String email, boolean active) {
-        this.login = fname;
-        this.password = lname;
-        this.email=email;
-        this.active=active;
+    public Employee(String login, String password, String email, boolean active) {
+        this.login.set(login);
+        this.password.set(password);
+        this.email.set(email);
+        this.active.set(active);
     }
 
     @Override
@@ -64,29 +64,30 @@ public class Employee {
                 ", active=" + active +
                 '}';
     }
-
+   // public IntegerProperty idProperty(){return id;}
+   @Id
+   @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
-        this.id = id;
+        this.id=id;
     }
 
+    public StringProperty loginProperty(){return login;}
     public String getLogin() {
-        return login;
+        return login.get();
     }
-
     public void setLogin(String login) {
-        this.login = login;
+        this.login.set(login);
     }
 
+    public StringProperty passwordProperty(){return password;}
     public String getPassword() {
-        return password;
+        return password.get();
     }
-
     public void setPassword(String password) {
-        this.password = password;
+        this.password.set(password);
     }
 
 }
