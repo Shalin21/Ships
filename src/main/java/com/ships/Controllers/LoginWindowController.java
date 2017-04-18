@@ -43,10 +43,11 @@ public class LoginWindowController {
     public void setMainStage(Stage mainStage){this.mainStage=mainStage;}
     CollectionEmployeeList employeeList = new CollectionEmployeeList();
     SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
-   public  Session session = sessionFactory.openSession();
+    public  Session session = sessionFactory.openSession();
 
     @FXML
     void linkClickCreate(MouseEvent event) {
+        linkBtnCreate.setVisited(false);
         Object source = event.getSource();
         if(!(source instanceof Hyperlink))
         {return;}
@@ -60,6 +61,8 @@ public class LoginWindowController {
     private TextField txtLogin;
     @FXML
     private Hyperlink linkBtn;
+    @FXML
+    private Hyperlink linkBtnCreate;
     @FXML
     private PasswordField txtPassword;
     private Employee employee = new Employee("asd","asd","asd",true);
@@ -86,6 +89,7 @@ public class LoginWindowController {
             loader1.setLocation(getClass().getResource("/Views/emailSendWindow.fxml"));
             root1=loader1.load();
             emailController= loader1.getController();
+            emailController.setMainStage(mainStage);
 
             loader2.setLocation(getClass().getResource("/Views/createNewAccWindow.fxml"));
             root2=loader2.load();
@@ -114,7 +118,6 @@ public class LoginWindowController {
 
                 if (status()==true) {
                     try {
-                       //mainController.setEmployee(employee);
                         if(employee.getLogin().equals("admin")){mainController.setAdmBtn();}
                         mainStage.hide();
                         showMainDialog();
@@ -132,6 +135,8 @@ public class LoginWindowController {
     }
     @FXML
     void linkClick(MouseEvent event) {
+
+        linkBtn.setVisited(false);
         showEmailDialog();
     }
 
@@ -140,13 +145,6 @@ public class LoginWindowController {
         if(!session.getTransaction().isActive()) {
             session.beginTransaction();
         }
-
-        // AppUser user = new AppUser("firstuser");
-       // Employee user = new Employee("alex", "shalin");
-     //   session.save(user);
-        //Employee user1 = new Employee(txtLogin.getText(), txtPassword.getText(), "asd@asd.ru" , false);
-        //System.out.println(user1.getLogin()+" "+user1.getPassword());
-        //session.getTransaction().commit();
         List<Employee> list = session.createCriteria(Employee.class).list();
         for (Employee j:list) {
             if(j.getLogin().toString().equals(txtLogin.getText()) && j.getPassword().equals(txtPassword.getText()) && j.getActive()==true){
@@ -202,7 +200,6 @@ public class LoginWindowController {
     {
         if(stage1==null)
         {
-            //Scene scene;
             stage1=new Stage();
             stage1.setTitle("Add Test");
             stage1.setMinHeight(83);
@@ -219,7 +216,6 @@ public class LoginWindowController {
     {
         if(stage2==null)
         {
-            //Scene scene;
             stage2=new Stage();
             stage2.setTitle("Add Test");
             stage2.setMinHeight(150);

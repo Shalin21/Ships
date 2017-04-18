@@ -45,6 +45,7 @@ public class MainWindowController {
 
     @FXML
     void onBtnAction(ActionEvent event) {
+        adminWindowController.fillTableView();
         showMainDialog();
 
     }
@@ -53,7 +54,7 @@ public class MainWindowController {
         if(stage==null)
         {
             stage=new Stage();
-            stage.setTitle("Test errors");
+            stage.setTitle("User list");
             stage.setMinHeight(423);
             stage.setMinWidth(337);
             stage.setResizable(false);
