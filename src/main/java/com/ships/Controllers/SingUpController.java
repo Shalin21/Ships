@@ -60,6 +60,9 @@ public class SingUpController {
     }
     @FXML
     void btnSendClick(MouseEvent event) {
+        if(session.isOpen()!=true){
+            session=sessionFactory.openSession();
+        }
         boolean flag=false;
        CollectionEmployeeList employeeList = new CollectionEmployeeList();
        employeeList.setCollection(FXCollections.observableArrayList(session.createCriteria(Employee.class).list()));
@@ -77,7 +80,7 @@ public class SingUpController {
                 Employee emp = new Employee(txtLogin.getText(), txtPassword.getText(), txtEmail.getText(), false);
                 session.save(emp);
                 session.getTransaction().commit();
-               // session.close();
+                session.close();
                 clearFields();
                 closeWindow(event);
             }

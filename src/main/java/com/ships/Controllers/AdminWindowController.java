@@ -5,6 +5,7 @@ import com.ships.Objects.Employee;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -60,7 +61,13 @@ public class AdminWindowController {
         tableColumnActive.setCellFactory(tableColumnActive -> new CheckBoxTableCell());
         tableColumnActive.setEditable(true);
         tableViewAcc.setEditable(true);
-        tableViewAcc.setItems(employeeList.getCollection());
+        ObservableList<Employee> collection = FXCollections.observableArrayList();
+        for (Employee e:employeeList.getCollection()) {
+            if(!e.getLogin().equals("admin")){
+                collection.add(e);
+            }
+        }
+        tableViewAcc.setItems(collection);
 
     }
 
@@ -81,7 +88,7 @@ public class AdminWindowController {
                 if(session.isOpen()!=true){
                     session=sessionFactory.openSession();
                 }
-                session = sessionFactory.openSession();
+//                session = sessionFactory.openSession();
                 session.beginTransaction();
                 employeeList.printCollection();
                 for (Employee j:employeeList.getCollection()) {
@@ -93,21 +100,30 @@ public class AdminWindowController {
             break;
             }
             case "btnDelete":{
-                if(session.isOpen()!=true) {
-                    session = sessionFactory.openSession();
+                if(!tableViewAcc.getSelectionModel().getSelectedItem().getLogin().equals("admin")) {
+                    if (session.isOpen() != true) {
+                        session = sessionFactory.openSession();
+                    }
+                    Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                    alert.setTitle("Confirm");
+                    alert.setHeaderText(null);
+                    alert.setContentText("Do you want to delete selected user?");
+                    Optional<ButtonType> result = alert.showAndWait();
+                    if (result.get() == ButtonType.OK) {
+                        session.beginTransaction();
+                        session.delete((Employee) tableViewAcc.getSelectionModel().getSelectedItem());
+                        employeeList.delete((Employee) tableViewAcc.getSelectionModel().getSelectedItem());
+                        session.getTransaction().commit();
+                    }
+                    session.close();
                 }
-                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-                alert.setTitle("Confirm");
-                alert.setHeaderText(null);
-                alert.setContentText("Do you want to delete selected user?");
-                Optional<ButtonType> result = alert.showAndWait();
-                if(result.get()==ButtonType.OK) {
-                    session.beginTransaction();
-                    session.delete((Employee) tableViewAcc.getSelectionModel().getSelectedItem());
-                    employeeList.delete((Employee) tableViewAcc.getSelectionModel().getSelectedItem());
-                    session.getTransaction().commit();
+                else{
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setTitle("Error");
+                    alert.setHeaderText(null);
+                    alert.setContentText("You can not delete admin user");
+                    alert.showAndWait();
                 }
-               session.close();
                 break;
             }
         }

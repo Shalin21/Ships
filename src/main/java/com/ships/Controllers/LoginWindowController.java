@@ -1,7 +1,9 @@
 package com.ships.Controllers;
 
 import com.ships.Interface.Implementation.CollectionEmployeeList;
+import com.ships.Interface.Implementation.CollectionShipsList;
 import com.ships.Objects.Employee;
+import com.ships.Objects.Ship;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -71,15 +73,20 @@ public class LoginWindowController {
 
     public void initialize()
    {
-//       System.out.println(employee.toString());
+//       CollectionShipsList collectionShipsList = new CollectionShipsList();
+//       collectionShipsList.fillTestData();
+////       System.out.println(employee.toString());
 //        session.beginTransaction();
-//        employeeList.fillTestData();
+//      employeeList.fillTestData();
 //        employeeList.printCollection();
 //        for (Employee emp:employeeList.getCollection()
 //                ) {
-//            session.save(emp);
-//        }
-//        session.close();
+//            session.save(emp);}
+//       for(Ship s:collectionShipsList.getCollection()){
+//           session.save(s);
+//       }
+//       session.getTransaction().commit();
+//     //session.close();
         employeeList.printCollection();
         try {
             loader.setLocation(getClass().getResource("/Views/mainWindow.fxml"));

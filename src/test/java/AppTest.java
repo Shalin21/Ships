@@ -1,4 +1,4 @@
-import com.ships.Objects.AppUser;
+
 import com.ships.Objects.Employee;
 import junit.framework.TestCase;
 
@@ -8,7 +8,6 @@ import org.hibernate.cfg.Configuration;
 
 import java.util.List;
 
-//import com.jvmhub.tutorial.entity.AppUser;
 
 
 public class AppTest extends TestCase {
@@ -19,7 +18,7 @@ public class AppTest extends TestCase {
 //        Session session = sessionFactory.openSession();
 //        session.beginTransaction();
 //        //session.get
-//       // AppUser user = new AppUser("firstuser");
+
 //        Employee user = new Employee("alex", "shalin");
 //        session.save(user);
 //       Employee user1 = new Employee("alex", "shalin");

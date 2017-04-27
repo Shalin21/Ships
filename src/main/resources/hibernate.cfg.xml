@@ -25,6 +25,7 @@
         <!-- Annotated entity classes -->
 
         <mapping class="com.ships.Objects.Employee"/>
+        <mapping class="com.ships.Objects.Ship"/>
 
     </session-factory>
 
