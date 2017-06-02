@@ -5,19 +5,32 @@ import com.ships.Objects.Ship;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 
+import java.io.IOException;
 import java.util.Optional;
 
 /**
  * Created by admin on 22.04.17.
  */
 public class ShipsListWindowController {
+
+    private Stage stage3;
+
+    private Parent root3;
+
+    private FXMLLoader loader3 = new FXMLLoader();
+
+    CalculationWindowController calculationWindowController;
     CollectionShipsList collectionShipsList = new CollectionShipsList();
     @FXML
     private Label labelType;
@@ -71,7 +84,18 @@ public class ShipsListWindowController {
         tableColumnDraft.setCellValueFactory(new PropertyValueFactory<Ship, Double>("MaxSeaguage"));
         tableColumnCarry.setCellValueFactory(new PropertyValueFactory<Ship, Integer>("MaxCarrying"));
         tableColumnFlag.setCellValueFactory(new PropertyValueFactory<Ship, String>("Flag"));
+        try {
 
+
+            loader3.setLocation(getClass().getResource("/Views/calculationWindow.fxml"));
+            root3 = loader3.load();
+            calculationWindowController=loader3.getController();
+
+        }
+        catch (IOException e){
+            System.out.println(e.toString());
+            System.out.println(e.getMessage());
+        }
     }
     @FXML
     void onBtnAction(ActionEvent event) {
@@ -112,10 +136,30 @@ public class ShipsListWindowController {
 
     @FXML
     void tableViewClick(MouseEvent event) {
+        if(event.getClickCount()==2 && event.getButton().toString()=="PRIMARY"){
+           calculationWindowController.setShip((Ship)tableView.getSelectionModel().getSelectedItem());
+            showDialog();
+        }
 
     }
     public void fillTableView(){
         tableView.setItems(collectionShipsList.getCollection());
     }
     public void setCollectionShipsList(ObservableList<Ship> list){collectionShipsList.setCollection(list);}
+
+    private void showDialog(){
+        if(stage3==null)
+        {
+            stage3=new Stage();
+            stage3.setTitle("");
+            stage3.setMinHeight(480);
+            stage3.setMinWidth(640);
+            stage3.setResizable(true);
+            stage3.setScene(new Scene(root3));
+            stage3.initModality(Modality.WINDOW_MODAL);
+            stage3.initOwner(btnOK.getScene().getWindow());
+
+        }
+        stage3.showAndWait();
+    }
 }
