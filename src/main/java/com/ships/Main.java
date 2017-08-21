@@ -1,25 +1,28 @@
 package com.ships;
 
-import com.ships.Controllers.LoginWindowController;
+import Controllers.LoginWindowController;
+//import com.sun.javaws.progress.Progress;
 import javafx.application.Application;
-import javafx.application.Platform;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.stage.WindowEvent;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
 
-/**
- * Created by admin on 04.04.17.
- */
 public class Main extends Application{
+
+    public static SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
     @Override
     public void start(Stage primaryStage) throws Exception{
 
+
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("/Views/loginWindow.fxml"));
-        Parent root = loader.load();
+        Parent root;
+        root=loader.load();
+        System.out.println("////////////////////////////////////////////////");
+        System.out.println("MAIN root:"+root);
         LoginWindowController mainController = loader.getController();
         mainController.setMainStage(primaryStage);
         primaryStage.setTitle("VCS");
@@ -27,17 +30,16 @@ public class Main extends Application{
         primaryStage.setResizable(false);
         primaryStage.show();
 
-        primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
-            @Override
-            public void handle(WindowEvent event) {
-               // mainController.session.close();
-                System.out.println("closing");
-                //Platform.exit();
-            }
-        });
     }
 
-
+    @Override
+    public void stop() throws Exception
+    {
+        //super.stop();
+        //Platform.exit();
+       // System.exit(0);
+        sessionFactory.close();
+    }
     public static void main(String[] args) {
         launch(args);
     }

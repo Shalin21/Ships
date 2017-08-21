@@ -1,6 +1,6 @@
-package com.ships.Interface;
+package Interface;
 
-import com.ships.Objects.Ship;
+import Objects.Ship;
 
 /**
  * Created by admin on 21.04.17.

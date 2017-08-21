@@ -1,7 +1,7 @@
-package com.ships.Interface.Implementation;
+package Interface.Implementation;
 
-import com.ships.Interface.EmployeeList;
-import com.ships.Objects.Employee;
+import Interface.EmployeeList;
+import Objects.Employee;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 

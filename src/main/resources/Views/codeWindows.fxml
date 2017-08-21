@@ -6,7 +6,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ships.Controllers.CodeWindowController">
+<AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CodeWindowController">
    <children>
       <Button fx:id="btnSend" layoutX="290.0" layoutY="106.0" mnemonicParsing="false" onMouseClicked="#btnSendClick" prefHeight="30.0" prefWidth="80.0" text="OK" AnchorPane.leftAnchor="290.0" />
       <TextField fx:id="txtCode" layoutX="117.0" layoutY="14.0" promptText="Code" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="5.0" />

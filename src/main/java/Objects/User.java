@@ -1,4 +1,4 @@
-package com.ships.Objects;
+package Objects;
 
 
 import javax.persistence.*;

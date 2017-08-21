@@ -1,4 +1,4 @@
-package com.ships.Controllers;
+package Controllers;
 
 /**
  * Created by admin on 26.05.17.

@@ -19,17 +19,17 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1200.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ships.Controllers.CalculationWindowController">
+<AnchorPane fx:id="RootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CalculationWindowController">
    <children>
       <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <tabs>
             <Tab fx:id="tabMain1" text="DATA">
                <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <AnchorPane fx:id="anchorPaneMain1" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <ScrollPane hbarPolicy="NEVER" layoutX="120.0" layoutY="49.0" prefHeight="538.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <content>
-                              <AnchorPane prefHeight="1200.0" prefWidth="640.0" style="-fx-background-color: White;">
+                              <AnchorPane prefHeight="970.0" prefWidth="640.0" style="-fx-background-color: White;">
                                  <children>
                                     <Label layoutX="15.0" layoutY="232.0" text="File Save Ref" AnchorPane.leftAnchor="5.0" />
                                     <Label layoutX="18.0" layoutY="260.0" text="Date" AnchorPane.leftAnchor="5.0" />
@@ -90,25 +90,25 @@
                                           <Label fx:id="txtShipDisplace" layoutX="493.0" layoutY="160.0" text="Name" />
                                        </children>
                                     </AnchorPane>
-                                    <TextField fx:id="inputFileName" layoutX="98.0" layoutY="227.0" style="-fx-background-color: transparent;" />
-                                    <TextField fx:id="inputPortOfReg" layoutX="98.0" layoutY="283.0" style="-fx-background-color: transparent;" />
-                                    <TextField fx:id="inputOwner" layoutX="98.0" layoutY="311.0" style="-fx-background-color: transparent;" />
-                                    <TextField fx:id="inputCapt" layoutX="98.0" layoutY="339.0" style="-fx-background-color: transparent;" />
-                                    <TextField fx:id="inputBerth" layoutX="98.0" layoutY="367.0" style="-fx-background-color: transparent;" />
-                                    <TextField fx:id="inputCargo" layoutX="98.0" layoutY="395.0" style="-fx-background-color: transparent;" />
-                                    <TextField fx:id="inputCargoOfficer" layoutX="98.0" layoutY="423.0" style="-fx-background-color: transparent;" />
-                                    <TextField fx:id="inputArrived" layoutX="98.0" layoutY="451.0" style="-fx-background-color: transparent;" />
-                                    <TextField fx:id="inputCommenced" layoutX="98.0" layoutY="479.0" style="-fx-background-color: transparent;" />
-                                    <TextField fx:id="inputCompleted" layoutX="98.0" layoutY="507.0" style="-fx-background-color: transparent;" />
+                                    <TextField fx:id="inputFileName" layoutX="98.0" layoutY="227.0" style="-fx-background-color: transparent;" text="asd" />
+                                    <TextField fx:id="inputPortOfReg" layoutX="98.0" layoutY="283.0" style="-fx-background-color: transparent;" text="asd" />
+                                    <TextField fx:id="inputOwner" layoutX="98.0" layoutY="311.0" style="-fx-background-color: transparent;" text="asd" />
+                                    <TextField fx:id="inputCapt" layoutX="98.0" layoutY="339.0" style="-fx-background-color: transparent;" text="asd" />
+                                    <TextField fx:id="inputBerth" layoutX="98.0" layoutY="367.0" style="-fx-background-color: transparent;" text="sad" />
+                                    <TextField fx:id="inputCargo" layoutX="98.0" layoutY="395.0" style="-fx-background-color: transparent;" text="asd" />
+                                    <TextField fx:id="inputCargoOfficer" layoutX="98.0" layoutY="423.0" style="-fx-background-color: transparent;" text="asd" />
+                                    <TextField fx:id="inputArrived" layoutX="98.0" layoutY="451.0" style="-fx-background-color: transparent;" text="asd" />
+                                    <TextField fx:id="inputCommenced" layoutX="98.0" layoutY="479.0" style="-fx-background-color: transparent;" text="asd" />
+                                    <TextField fx:id="inputCompleted" layoutX="98.0" layoutY="507.0" style="-fx-background-color: transparent;" text="sad" />
                                     <TextField fx:id="inputGross" alignment="CENTER_RIGHT" layoutX="98.0" layoutY="535.0" style="-fx-background-color: transparent;" />
                                     <TextField fx:id="inputNett" alignment="CENTER_RIGHT" layoutX="98.0" layoutY="563.0" style="-fx-background-color: transparent;" />
                                     <TextField fx:id="inputLBP" alignment="CENTER_RIGHT" layoutX="98.0" layoutY="591.0" style="-fx-background-color: transparent;" />
                                     <TextField fx:id="inputDockDensity" alignment="CENTER_RIGHT" layoutX="98.0" layoutY="619.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="98.0" />
-                                    <TextField fx:id="inputLastPort" layoutX="362.0" layoutY="227.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
-                                    <TextField fx:id="inputNextPort" layoutX="362.0" layoutY="255.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
-                                    <TextField fx:id="inputSurveyor" layoutX="362.0" layoutY="283.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
+                                    <TextField fx:id="inputLastPort" layoutX="362.0" layoutY="227.0" style="-fx-background-color: transparent;" text="asd" AnchorPane.rightAnchor="40.0" />
+                                    <TextField fx:id="inputNextPort" layoutX="362.0" layoutY="255.0" style="-fx-background-color: transparent;" text="asd" AnchorPane.rightAnchor="40.0" />
+                                    <TextField fx:id="inputSurveyor" layoutX="362.0" layoutY="283.0" style="-fx-background-color: transparent;" text="asd" AnchorPane.rightAnchor="40.0" />
                                     <TextField fx:id="inputLanding" alignment="CENTER" layoutX="362.0" layoutY="311.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
-                                    <TextField fx:id="inputPort" layoutX="362.0" layoutY="339.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
+                                    <TextField fx:id="inputPort" layoutX="362.0" layoutY="339.0" style="-fx-background-color: transparent;" text="asd" AnchorPane.rightAnchor="40.0" />
                                     <TextField fx:id="inputFordP" alignment="CENTER_RIGHT" layoutX="362.0" layoutY="367.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="130.0" />
                                     <TextField fx:id="inputFordS" alignment="CENTER_RIGHT" layoutX="362.0" layoutY="395.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="130.0" />
                                     <TextField fx:id="inputMidP" alignment="CENTER_RIGHT" layoutX="362.0" layoutY="423.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="130.0" />
@@ -151,7 +151,7 @@
                                     <DatePicker fx:id="datePick" layoutX="98.0" layoutY="257.0" prefHeight="27.0" prefWidth="167.0" />
                                     <Label layoutX="9.0" layoutY="662.0" text="If the hydrostatics are from top of the keel" />
                                     <Label layoutX="9.0" layoutY="679.0" text="please enter keel correction in mm" />
-                                    <TextField fx:id="inputCaorrMM" layoutX="224.0" layoutY="678.0" prefHeight="27.0" prefWidth="46.0" />
+                                    <TextField fx:id="inputCaorrMM" layoutX="224.0" layoutY="678.0" prefHeight="27.0" prefWidth="46.0" text="22" />
                                     <Label alignment="CENTER" layoutX="10.0" layoutY="696.0" text="Hydrostatic Data">
                                        <font>
                                           <Font size="18.0" />
@@ -173,69 +173,69 @@
                                     <Label layoutX="9.0" layoutY="846.0" text="LCF" />
                                     <Label layoutX="9.0" layoutY="874.0" text="MCT+50cm" />
                                     <Label layoutX="9.0" layoutY="902.0" text="MCT-50cm" />
-                                    <TextField fx:id="DraughtArrivBelow" layoutX="98.0" layoutY="752.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="DraughtArrivBelow" layoutX="98.0" layoutY="752.0" prefHeight="27.0" prefWidth="82.0" text="1">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="DisplaceArrivBelow" layoutX="98.0" layoutY="781.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="DisplaceArrivBelow" layoutX="98.0" layoutY="781.0" prefHeight="27.0" prefWidth="82.0" text="21">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="TPCArrivBelow" layoutX="98.0" layoutY="810.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="TPCArrivBelow" layoutX="98.0" layoutY="810.0" prefHeight="27.0" prefWidth="82.0" text="1">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="LCFArrivBelow" layoutX="98.0" layoutY="839.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="LCFArrivBelow" layoutX="98.0" layoutY="839.0" prefHeight="27.0" prefWidth="82.0" text="2">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="MCTArrivBelow" layoutX="98.0" layoutY="868.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="MCTArrivBelow" layoutX="98.0" layoutY="868.0" prefHeight="27.0" prefWidth="82.0" text="2">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="MCT2ArrivBelow" layoutX="98.0" layoutY="897.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="MCT2ArrivBelow" layoutX="98.0" layoutY="897.0" prefHeight="27.0" prefWidth="82.0" text="1">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
                                     <Label layoutX="114.0" layoutY="733.0" text="Below" />
                                     <Label layoutX="203.0" layoutY="733.0" text="Above" />
-                                    <TextField fx:id="DraughtArrivAbove" layoutX="181.0" layoutY="753.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="DraughtArrivAbove" layoutX="181.0" layoutY="753.0" prefHeight="27.0" prefWidth="82.0" text="2">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="DisplaceArrivAbove" layoutX="181.0" layoutY="781.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="DisplaceArrivAbove" layoutX="181.0" layoutY="781.0" prefHeight="27.0" prefWidth="82.0" text="23">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="TPCArrivAbove" layoutX="182.0" layoutY="810.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="TPCArrivAbove" layoutX="182.0" layoutY="810.0" prefHeight="27.0" prefWidth="82.0" text="1">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="LCFArrivAbove" layoutX="181.0" layoutY="839.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="LCFArrivAbove" layoutX="181.0" layoutY="839.0" prefHeight="27.0" prefWidth="82.0" text="2">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="MCTArrivAbove" layoutX="181.0" layoutY="868.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="MCTArrivAbove" layoutX="181.0" layoutY="868.0" prefHeight="27.0" prefWidth="82.0" text="2">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="MCT2ArrivAbove" layoutX="181.0" layoutY="897.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="MCT2ArrivAbove" layoutX="181.0" layoutY="897.0" prefHeight="27.0" prefWidth="82.0" text="1">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="inputArrivLCF" layoutX="43.0" layoutY="841.0" prefHeight="27.0" prefWidth="51.0">
+                                    <TextField fx:id="inputArrivLCF" layoutX="43.0" layoutY="841.0" prefHeight="27.0" prefWidth="51.0" text="a">
                                        <font>
                                           <Font name="Arial" size="11.0" />
                                        </font>
@@ -246,59 +246,59 @@
                                     <Label layoutX="332.0" layoutY="850.0" text="LCF" />
                                     <Label layoutX="332.0" layoutY="878.0" text="MCT+50cm" />
                                     <Label layoutX="332.0" layoutY="906.0" text="MCT-50cm" />
-                                    <TextField fx:id="DraughtDepBelow" layoutX="421.0" layoutY="756.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="DraughtDepBelow" layoutX="421.0" layoutY="756.0" prefHeight="27.0" prefWidth="82.0" text="2">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="DisplaceDepBelow" layoutX="421.0" layoutY="785.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="DisplaceDepBelow" layoutX="421.0" layoutY="785.0" prefHeight="27.0" prefWidth="82.0" text="40">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="TPCDepBelow" layoutX="421.0" layoutY="814.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="TPCDepBelow" layoutX="421.0" layoutY="814.0" prefHeight="27.0" prefWidth="82.0" text="4">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="LCFDepBelow" layoutX="421.0" layoutY="843.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="LCFDepBelow" layoutX="421.0" layoutY="843.0" prefHeight="27.0" prefWidth="82.0" text="3">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="MCTDepBelow" layoutX="421.0" layoutY="872.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="MCTDepBelow" layoutX="421.0" layoutY="872.0" prefHeight="27.0" prefWidth="82.0" text="1">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="MCT2DepBelow" layoutX="421.0" layoutY="901.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="MCT2DepBelow" layoutX="421.0" layoutY="901.0" prefHeight="27.0" prefWidth="82.0" text="1">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
                                     <Label layoutX="437.0" layoutY="737.0" text="Below" />
                                     <Label layoutX="526.0" layoutY="737.0" text="Above" />
-                                    <TextField fx:id="DraughtDepAbove" layoutX="504.0" layoutY="757.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="DraughtDepAbove" layoutX="504.0" layoutY="757.0" prefHeight="27.0" prefWidth="82.0" text="3">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="DisplaceDepAbove" layoutX="504.0" layoutY="785.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="DisplaceDepAbove" layoutX="504.0" layoutY="785.0" prefHeight="27.0" prefWidth="82.0" text="50">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="TPCDepAbove" layoutX="505.0" layoutY="814.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="TPCDepAbove" layoutX="505.0" layoutY="814.0" prefHeight="27.0" prefWidth="82.0" text="4">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="LCFDepAbove" layoutX="504.0" layoutY="843.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="LCFDepAbove" layoutX="504.0" layoutY="843.0" prefHeight="27.0" prefWidth="82.0" text="3">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="MCTDepAbove" layoutX="504.0" layoutY="872.0" prefHeight="27.0" prefWidth="82.0">
+                                    <TextField fx:id="MCTDepAbove" layoutX="504.0" layoutY="872.0" prefHeight="27.0" prefWidth="82.0" text="1">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
@@ -308,7 +308,7 @@
                                           <Font size="11.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="inputDepLCF" layoutX="366.0" layoutY="845.0" prefHeight="27.0" prefWidth="51.0">
+                                    <TextField fx:id="inputDepLCF" layoutX="366.0" layoutY="845.0" prefHeight="27.0" prefWidth="51.0" text="a">
                                        <font>
                                           <Font name="Arial" size="11.0" />
                                        </font>
@@ -480,7 +480,7 @@
                                                       <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                                                    </columnResizePolicy>
                                                 </TableView>
-                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="246.0" layoutY="880.0" stroke="BLACK" strokeType="OUTSIDE" width="507.0" />
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="246.0" layoutX="1.0" layoutY="880.0" stroke="BLACK" strokeType="OUTSIDE" width="507.0" />
                                                 <TableView fx:id="OilTableInit" layoutX="30.0" layoutY="932.0" prefHeight="159.0" prefWidth="178.0">
                                                    <columns>
                                                       <TableColumn fx:id="OilinitColumnName" prefWidth="75.0" />
@@ -516,54 +516,54 @@
                                                 </Label>
                                                 <Label layoutX="80.0" layoutY="910.0" text="Initial survey" />
                                                 <Label layoutX="354.0" layoutY="910.0" text="Final survey" />
-                                                <Label fx:id="labelFreshWFinTotal" alignment="CENTER_RIGHT" layoutX="690.0" layoutY="840.0" text="Label">
+                                                <Label fx:id="labelFreshWFinTotal" alignment="CENTER_RIGHT" layoutX="690.0" layoutY="840.0" text="0.0">
                                                    <font>
                                                       <Font name="Courier New" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <Label fx:id="labelFreshWInitTotal" alignment="CENTER_RIGHT" layoutX="391.0" layoutY="840.0" text="Label">
+                                                <Label fx:id="labelFreshWInitTotal" alignment="CENTER_RIGHT" layoutX="391.0" layoutY="840.0" text="0.0">
                                                    <font>
                                                       <Font name="Courier New" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <Label fx:id="labelFreshWTankCop" alignment="CENTER_RIGHT" layoutX="119.0" layoutY="840.0" text="Label">
+                                                <Label fx:id="labelFreshWTankCop" alignment="CENTER_RIGHT" layoutX="119.0" layoutY="840.0" text="0.0">
                                                    <font>
                                                       <Font name="Courier New" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <Label fx:id="labelOilinitTotal" alignment="CENTER_RIGHT" layoutX="119.0" layoutY="1100.0" text="Label">
+                                                <Label fx:id="labelOilinitTotal" alignment="CENTER_RIGHT" layoutX="119.0" layoutY="1100.0" text="0.0">
                                                    <font>
                                                       <Font name="Courier New" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <Label fx:id="labelOilFinTotal" alignment="CENTER_RIGHT" layoutX="374.0" layoutY="1100.0" text="Label">
+                                                <Label fx:id="labelOilFinTotal" alignment="CENTER_RIGHT" layoutX="374.0" layoutY="1100.0" text="0.0">
                                                    <font>
                                                       <Font name="Courier New" size="13.0" />
                                                    </font>
                                                 </Label>
                                                 <Label layoutX="352.0" layoutY="656.0" text="Initial survey" />
                                                 <Label layoutX="651.0" layoutY="656.0" text="Final survey" />
-                                                <Label fx:id="labelTanksTotal" alignment="CENTER_RIGHT" layoutX="119.0" layoutY="600.0" text="Label">
+                                                <Label fx:id="labelTanksTotal" alignment="CENTER_RIGHT" layoutX="119.0" layoutY="600.0" text="0.0">
                                                    <font>
                                                       <Font name="Courier New" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <Label fx:id="labelInitSurveyTotalVol" alignment="CENTER_RIGHT" layoutX="318.0" layoutY="600.0" text="Label">
+                                                <Label fx:id="labelInitSurveyTotalVol" alignment="CENTER_RIGHT" layoutX="318.0" layoutY="600.0" text="0.0">
                                                    <font>
                                                       <Font name="Courier New" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <Label fx:id="labelFinSurveyTotalVol" alignment="CENTER_RIGHT" layoutX="623.0" layoutY="600.0" text="Label">
+                                                <Label fx:id="labelFinSurveyTotalVol" alignment="CENTER_RIGHT" layoutX="623.0" layoutY="600.0" text="0.0">
                                                    <font>
                                                       <Font name="Courier New" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <Label fx:id="labelInitSurveyTotalTon" alignment="CENTER_RIGHT" layoutX="428.0" layoutY="600.0" text="Label">
+                                                <Label fx:id="labelInitSurveyTotalTon" alignment="CENTER_RIGHT" layoutX="428.0" layoutY="600.0" text="0.0">
                                                    <font>
                                                       <Font name="Courier New" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <Label fx:id="labelFinSurveyTotalTon" alignment="CENTER_RIGHT" layoutX="737.0" layoutY="600.0" text="Label">
+                                                <Label fx:id="labelFinSurveyTotalTon" alignment="CENTER_RIGHT" layoutX="737.0" layoutY="600.0" text="0.0">
                                                    <font>
                                                       <Font name="Courier New" size="13.0" />
                                                    </font>
@@ -579,15 +579,15 @@
                      </children></AnchorPane>
             </content>
           </Tab>
-            <Tab text="Survey">
+            <Tab fx:id="tabSurvey" text="Survey">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <ScrollPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                           <content>
-                            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="1200.0" prefWidth="870.0">
+                            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="625.0">
                                  <children>
-                                    <Label alignment="CENTER" layoutX="258.0" layoutY="38.0" text="Draught Survey Certifiate" underline="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                                    <Label alignment="CENTER" layoutX="258.0" layoutY="38.0" text="Draught Survey Certificate" underline="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
                                        <font>
                                           <Font name="Arial" size="18.0" />
                                        </font>
@@ -731,10 +731,10 @@
                                     <Label fx:id="labelTrimCorA" layoutX="264.0" layoutY="240.0" text="Label" />
                                     <Label fx:id="labelCorDisp" layoutX="264.0" layoutY="274.0" text="Label" />
                                     <Label fx:id="labelTrimCorB" layoutX="264.0" layoutY="257.0" text="Label" />
-                                    <Label fx:id="labelDockDensAriv" layoutX="263.0" layoutY="291.0" text="Label" />
-                                    <Label fx:id="labelDispDens" layoutX="263.0" layoutY="308.0" text="Label" />
-                                    <Label layoutX="263.0" layoutY="325.0" text="Label" />
-                                    <Label layoutX="263.0" layoutY="342.0" text="Label" />
+                                    <Label fx:id="labelDockDensAriv" layoutX="263.0" layoutY="291.0" text="0.0" />
+                                    <Label fx:id="labelDispDens" layoutX="263.0" layoutY="308.0" text="0.0" />
+                                    <Label fx:id="labelVariables" layoutX="263.0" layoutY="325.0" text="0.0" />
+                                    <Label fx:id="labelNetDispl" layoutX="263.0" layoutY="342.0" text="0.0" />
                                     <Line endX="380.0" layoutX="89.0" layoutY="138.0" AnchorPane.leftAnchor="0.0" />
                                     <Line endX="380.0" layoutX="92.0" layoutY="155.0" AnchorPane.leftAnchor="0.0" />
                                     <Line endX="380.0" layoutX="101.0" layoutY="171.0" AnchorPane.leftAnchor="0.0" />
@@ -853,12 +853,12 @@
                                     <Label fx:id="labelthreefourDe" layoutX="264.0" layoutY="476.0" text="Label" />
                                     <Label fx:id="labelDisp1" layoutX="264.0" layoutY="493.0" text="Label" />
                                     <Label fx:id="labelTrimCorA1" layoutX="264.0" layoutY="510.0" text="Label" />
-                                    <Label fx:id="labelCorDisp1" layoutX="264.0" layoutY="544.0" text="Label" />
+                                    <Label fx:id="labelCorDisp1" layoutX="264.0" layoutY="544.0" text="0.0" />
                                     <Label fx:id="labelTrimCorB1" layoutX="264.0" layoutY="527.0" text="Label" />
-                                    <Label fx:id="labelDockDensDep" layoutX="263.0" layoutY="561.0" text="Label" />
-                                    <Label fx:id="labelDispDens1" layoutX="263.0" layoutY="578.0" text="Label" />
-                                    <Label layoutX="263.0" layoutY="595.0" text="Label" />
-                                    <Label layoutX="263.0" layoutY="612.0" text="Label" />
+                                    <Label fx:id="labelDockDensDep" layoutX="263.0" layoutY="561.0" text="0.0" />
+                                    <Label fx:id="labelDispDens1" layoutX="263.0" layoutY="578.0" text="0.0" />
+                                    <Label fx:id="labelVariables1" layoutX="263.0" layoutY="595.0" text="0.0" />
+                                    <Label fx:id="labelNetDispl1" layoutX="263.0" layoutY="612.0" text="0.0" />
                                     <Line endX="380.0" layoutX="89.0" layoutY="408.0" AnchorPane.leftAnchor="0.0" />
                                     <Line endX="380.0" layoutX="92.0" layoutY="425.0" AnchorPane.leftAnchor="0.0" />
                                     <Line endX="380.0" layoutX="101.0" layoutY="441.0" AnchorPane.leftAnchor="0.0" />
@@ -879,7 +879,7 @@
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="263.0" layoutY="630.0" text="Label" />
+                                    <Label fx:id="labelCargo" layoutX="263.0" layoutY="630.0" text="0.0" />
                                     <Line endX="380.0" layoutX="83.0" layoutY="647.0" AnchorPane.leftAnchor="0.0" />
                                     <Label layoutX="14.0" layoutY="648.0" text="SURVEYOR">
                                        <font>
@@ -986,35 +986,35 @@
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="500.0" layoutY="274.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelOilTotal" layoutX="500.0" layoutY="274.0" text="0.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="381.0" layoutY="291.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="393.0" layoutY="290.0" text="F.Water" AnchorPane.leftAnchor="390.0">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="500.0" layoutY="291.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelFWater" layoutX="500.0" layoutY="291.0" text="0.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="381.0" layoutY="308.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="392.0" layoutY="307.0" text="Ballast" AnchorPane.leftAnchor="390.0">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="500.0" layoutY="308.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelBallast" layoutX="500.0" layoutY="308.0" text="0.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="381.0" layoutY="325.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="392.0" layoutY="325.0" text="Other" AnchorPane.leftAnchor="390.0">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="500.0" layoutY="325.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelOther" layoutX="500.0" layoutY="325.0" text="0.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="381.0" layoutY="342.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="393.0" layoutY="342.0" text="Total" AnchorPane.leftAnchor="390.0">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="500.0" layoutY="342.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelTotal" layoutX="500.0" layoutY="342.0" text="0.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="381.0" layoutY="359.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="403.0" layoutY="433.0" text="Tpc" AnchorPane.leftAnchor="390.0">
                                        <font>
@@ -1056,41 +1056,47 @@
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="505.0" layoutY="552.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelOilTotal1" layoutX="505.0" layoutY="552.0" text="0.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="386.0" layoutY="569.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="398.0" layoutY="568.0" text="F.Water" AnchorPane.leftAnchor="390.0">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="505.0" layoutY="569.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelFWater1" layoutX="505.0" layoutY="569.0" text="0.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="386.0" layoutY="586.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="397.0" layoutY="585.0" text="Ballast" AnchorPane.leftAnchor="390.0">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="505.0" layoutY="586.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelBallast1" layoutX="505.0" layoutY="586.0" text="0.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="386.0" layoutY="603.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="397.0" layoutY="603.0" text="Other" AnchorPane.leftAnchor="390.0">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="505.0" layoutY="603.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelOther1" layoutX="505.0" layoutY="603.0" text="0.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="386.0" layoutY="620.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="398.0" layoutY="620.0" text="Total" AnchorPane.leftAnchor="390.0">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="505.0" layoutY="620.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelTotal1" layoutX="505.0" layoutY="620.0" text="0.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="386.0" layoutY="637.0" AnchorPane.leftAnchor="380.5" />
+                                    <Button fx:id="btnMake" layoutX="13.0" layoutY="747.0" mnemonicParsing="false" onAction="#onBtnMakeClick" text="Make Certificate" />
                                  </children>
                               </AnchorPane>
                           </content>
                         </ScrollPane>
                      </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Visual">
+              <content>
+                <AnchorPane fx:id="visualPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
               </content>
             </Tab>
           <Tab fx:id="tabImage" text="Накладные">

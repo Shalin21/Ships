@@ -1,4 +1,4 @@
-package com.ships.Objects;
+package Objects;
 
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleStringProperty;

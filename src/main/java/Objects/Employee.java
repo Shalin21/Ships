@@ -1,4 +1,4 @@
-package com.ships.Objects;
+package Objects;
 
 //import org.hibernate.annotations.GenerationTime;
 //import javax.*;

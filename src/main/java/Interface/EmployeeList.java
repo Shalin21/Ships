@@ -1,6 +1,6 @@
-package com.ships.Interface;
+package Interface;
 
-import com.ships.Objects.Employee;
+import Objects.Employee;
 
 /**
  * Created by admin on 14.04.17.

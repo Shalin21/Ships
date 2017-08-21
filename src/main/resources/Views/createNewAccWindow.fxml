@@ -6,7 +6,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ships.Controllers.SingUpController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SingUpController">
    <children>
       <Button fx:id="btnSend" layoutX="21.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#btnSendClick" prefHeight="30.0" prefWidth="80.0" text="Send" AnchorPane.leftAnchor="30.0" />
       <Button fx:id="btnCancel" cancelButton="true" layoutX="327.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#btnCanselClick" prefHeight="30.0" prefWidth="80.0" text="Cancel" AnchorPane.rightAnchor="30.0" />
