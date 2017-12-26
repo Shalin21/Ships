@@ -8,7 +8,7 @@
     <artifactId>Ships</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
+    <!--
     <packaging>jar</packaging>
     <build>
         <plugins>
@@ -45,7 +45,7 @@
             </plugin>
         </plugins>
     </build>
-
+    -->
 
 
     <dependencies>
@@ -54,6 +54,8 @@
             <artifactId>hibernate-core</artifactId>
             <version>5.2.9.Final</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.junit/junit5-engine -->
+
 
         <!-- https://mvnrepository.com/artifact/postgresql/postgresql -->
         <dependency>
@@ -62,16 +64,18 @@
             <version>9.1-901.jdbc4</version>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>
             <version>1.4</version>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+
         <dependency>
             <groupId>com.itextpdf</groupId>
             <artifactId>itextpdf</artifactId>
