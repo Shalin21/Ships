@@ -8,13 +8,13 @@ import javafx.beans.property.SimpleStringProperty;
  */
 public class Canal {
 
-    private SimpleStringProperty canalName;
-    private SimpleDoubleProperty canalLength;
-    private SimpleDoubleProperty canalL;
-    private SimpleDoubleProperty canalW;
-    private SimpleDoubleProperty canalD;
-    private SimpleStringProperty canalSize;
-    private SimpleStringProperty canalPass;
+    private SimpleStringProperty canalName = new SimpleStringProperty();
+    private SimpleDoubleProperty canalLength = new SimpleDoubleProperty();
+    private SimpleDoubleProperty canalL = new SimpleDoubleProperty();
+    private SimpleDoubleProperty canalW = new SimpleDoubleProperty();
+    private SimpleDoubleProperty canalD = new SimpleDoubleProperty();
+    private SimpleStringProperty canalSize = new SimpleStringProperty();
+    private SimpleStringProperty canalPass = new SimpleStringProperty();
 
     @Override
     public String toString() {
@@ -29,17 +29,18 @@ public class Canal {
                 '}';
     }
 
+    public Canal(){}
     public Canal(String canalName, Double canalLength, Double canalL, Double canalW, Double canalD) {
         this.canalName.set(canalName);
         this.canalLength.set(canalLength);
         this.canalL.set(canalL);
         this.canalW.set(canalW);
         this.canalD.set(canalD);
-        this.canalSize.set(Double.toString(this.getCanalL())+"x"+Double.toString(this.getCanalW())+"x"+Double.toString(this.getCanalD()));
+        this.canalSize.set(Double.toString(this.getCanalL())+" x "+Double.toString(this.getCanalW())+" x "+Double.toString(this.getCanalD()));
     }
 
     public void checkShipSize(Double length, Double width, Double depth){
-
+        this.canalPass.set("");
        if(length>=canalL.get() || width>=canalW.get() ||  depth>=canalD.get()){
            if(length>=canalL.get()){canalPass.setValue(canalPass.get()+"Судно не проходит по длинне \n");}
            if(width>=canalW.get()){canalPass.setValue(canalPass.get()+"Судно не проходит по ширине \n");}
@@ -119,5 +120,17 @@ public class Canal {
 
     public void setCanalPass(String canalPass) {
         this.canalPass.set(canalPass);
+    }
+
+    public String getCanalSize() {
+        return canalSize.get();
+    }
+
+    public SimpleStringProperty canalSizeProperty() {
+        return canalSize;
+    }
+
+    public void setCanalSize(String canalSize) {
+        this.canalSize.set(canalSize);
     }
 }

@@ -83,16 +83,6 @@
               <MenuItem fx:id="menuItemAdd" mnemonicParsing="false" onAction="#onMenuAction" text="Add ship" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem fx:id="menuItemTest" mnemonicParsing="false" onAction="#onMenuAction" text="Test" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
         </menus>
       </MenuBar>
    </children>

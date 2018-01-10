@@ -14,7 +14,7 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#linkClickCreate" prefHeight="279.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginWindowController">
    <children>
       <Button fx:id="btnLogin" layoutX="115.0" layoutY="171.0" mnemonicParsing="false" onAction="#btnAction" prefHeight="27.0" prefWidth="107.0" text="Login" />
-      <TextField fx:id="txtLogin" layoutX="65.0" layoutY="78.0" prefHeight="27.0" prefWidth="208.0" style="-fx-background-color: transparent;">
+      <TextField fx:id="txtLogin" alignment="CENTER" layoutX="65.0" layoutY="78.0" prefHeight="27.0" prefWidth="208.0" style="-fx-background-color: transparent;">
          <font>
             <Font size="14.0" />
          </font>
@@ -32,7 +32,7 @@
             <Image url="@../Imgs/1491585408_icons_user.png" />
          </image>
       </ImageView>
-      <PasswordField fx:id="txtPassword" layoutX="64.0" layoutY="119.0" prefWidth="208.0" style="-fx-background-color: transparent;">
+      <PasswordField fx:id="txtPassword" alignment="CENTER" layoutX="64.0" layoutY="119.0" prefWidth="208.0" style="-fx-background-color: transparent;">
          <font>
             <Font size="12.0" />
          </font>

@@ -26,10 +26,17 @@ public class CanalsWindowController {
     @FXML
     private TableColumn<Canal, String> columnCanalPass;
     private CollectionCanalList collectionCanalList = new CollectionCanalList();
-    public void setData(){
-        //Canal canal = new Canal("Морской путь Святого Лаврентия", 600.0, 225.5, 23.8, 8.2);
-        //System.out.println(canal.toString());
+    public void setData(Double length, Double width, Double depth){
+//        Canal canal = new Canal("Морской путь Святого Лаврентия", 600.0, 225.5, 23.8, 8.2);
+//        System.out.println(canal.toString());
+        collectionCanalList = null;
+        collectionCanalList = new CollectionCanalList();
         collectionCanalList.setCanalCollectionData();
+
+        for (Canal c :collectionCanalList.getCanalCollection()
+             ) {
+            c.checkShipSize(length,width,depth);
+        }
         //collectionCanalList.printCollection();
         tableViewCanals.setItems(collectionCanalList.getCanalCollection());
     }

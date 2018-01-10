@@ -8,16 +8,19 @@ import javafx.beans.property.SimpleStringProperty;
  */
 public class Survey {
 
-    private SimpleStringProperty Sounding;
-    private SimpleDoubleProperty Volume;
-    private SimpleDoubleProperty Density;
-    private  SimpleDoubleProperty Tonnes;
+    private SimpleStringProperty Sounding = new SimpleStringProperty();
+    private SimpleDoubleProperty Volume = new SimpleDoubleProperty();
+    private SimpleDoubleProperty Density = new SimpleDoubleProperty();
+    private  SimpleDoubleProperty Tonnes = new SimpleDoubleProperty();
 
     public Survey(String sounding, Double volume, Double density) {
        this.Sounding = new SimpleStringProperty(sounding);
        this.Volume = new SimpleDoubleProperty(volume);
        this.Density = new SimpleDoubleProperty(density);
        this.Tonnes = new SimpleDoubleProperty(volume*density);
+    }
+
+    public Survey() {
     }
 
     public String getSounding() {

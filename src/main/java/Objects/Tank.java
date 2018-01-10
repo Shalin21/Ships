@@ -8,12 +8,15 @@ import javafx.beans.property.SimpleStringProperty;
  */
 public class Tank {
 
-    private SimpleStringProperty tankName;
-    private SimpleDoubleProperty tankCopacity;
+    private SimpleStringProperty tankName = new SimpleStringProperty();
+    private SimpleDoubleProperty tankCopacity = new SimpleDoubleProperty();
 
     public Tank(String tankName, Double tankCopacity) {
         this.tankName = new SimpleStringProperty(tankName);
         this.tankCopacity= new SimpleDoubleProperty(tankCopacity);
+    }
+
+    public Tank() {
     }
 
     public String getTankName() {

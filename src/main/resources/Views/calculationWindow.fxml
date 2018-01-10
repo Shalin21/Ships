@@ -29,7 +29,7 @@
                      <children>
                         <ScrollPane hbarPolicy="NEVER" layoutX="120.0" layoutY="49.0" prefHeight="538.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <content>
-                              <AnchorPane prefHeight="970.0" prefWidth="640.0" style="-fx-background-color: White;">
+                              <AnchorPane fx:id="anchorPaneMain100" prefHeight="970.0" prefWidth="640.0" style="-fx-background-color: White;">
                                  <children>
                                     <Label layoutX="15.0" layoutY="232.0" text="File Save Ref" AnchorPane.leftAnchor="5.0" />
                                     <Label layoutX="18.0" layoutY="260.0" text="Date" AnchorPane.leftAnchor="5.0" />
@@ -90,25 +90,26 @@
                                           <Label fx:id="txtShipDisplace" layoutX="493.0" layoutY="160.0" text="Name" />
                                        </children>
                                     </AnchorPane>
-                                    <TextField fx:id="inputFileName" layoutX="98.0" layoutY="227.0" style="-fx-background-color: transparent;" text="asd" />
-                                    <TextField fx:id="inputPortOfReg" layoutX="98.0" layoutY="283.0" style="-fx-background-color: transparent;" text="asd" />
-                                    <TextField fx:id="inputOwner" layoutX="98.0" layoutY="311.0" style="-fx-background-color: transparent;" text="asd" />
-                                    <TextField fx:id="inputCapt" layoutX="98.0" layoutY="339.0" style="-fx-background-color: transparent;" text="asd" />
-                                    <TextField fx:id="inputBerth" layoutX="98.0" layoutY="367.0" style="-fx-background-color: transparent;" text="sad" />
-                                    <TextField fx:id="inputCargo" layoutX="98.0" layoutY="395.0" style="-fx-background-color: transparent;" text="asd" />
-                                    <TextField fx:id="inputCargoOfficer" layoutX="98.0" layoutY="423.0" style="-fx-background-color: transparent;" text="asd" />
-                                    <TextField fx:id="inputArrived" layoutX="98.0" layoutY="451.0" style="-fx-background-color: transparent;" text="asd" />
-                                    <TextField fx:id="inputCommenced" layoutX="98.0" layoutY="479.0" style="-fx-background-color: transparent;" text="asd" />
-                                    <TextField fx:id="inputCompleted" layoutX="98.0" layoutY="507.0" style="-fx-background-color: transparent;" text="sad" />
+                                    <TextField fx:id="inputFileName" layoutX="98.0" layoutY="227.0" style="-fx-background-color: transparent;" />
+                                    <TextField fx:id="inputPortOfReg" layoutX="98.0" layoutY="283.0" style="-fx-background-color: transparent;" />
+                                    <TextField fx:id="inputOwner" layoutX="98.0" layoutY="311.0" style="-fx-background-color: transparent;" />
+                                    <TextField fx:id="inputCapt" layoutX="98.0" layoutY="339.0" style="-fx-background-color: transparent;" />
+                                    <TextField fx:id="inputBerth" layoutX="98.0" layoutY="367.0" style="-fx-background-color: transparent;" />
+                                    <TextField fx:id="inputCargo" layoutX="98.0" layoutY="395.0" style="-fx-background-color: transparent;" />
+                                    <TextField fx:id="inputCargoOfficer" layoutX="98.0" layoutY="423.0" style="-fx-background-color: transparent;" />
+                                    <TextField fx:id="inputArrived" layoutX="98.0" layoutY="451.0" style="-fx-background-color: transparent;" />
+                                    <TextField fx:id="inputCommenced" layoutX="98.0" layoutY="479.0" style="-fx-background-color: transparent;" />
+                                    <TextField fx:id="inputCompleted" layoutX="98.0" layoutY="507.0" style="-fx-background-color: transparent;" />
                                     <TextField fx:id="inputGross" alignment="CENTER_RIGHT" layoutX="98.0" layoutY="535.0" style="-fx-background-color: transparent;" />
+                                    <TextField fx:id="inputFordP1" alignment="CENTER_RIGHT" layoutX="525.0" layoutY="367.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
                                     <TextField fx:id="inputNett" alignment="CENTER_RIGHT" layoutX="98.0" layoutY="563.0" style="-fx-background-color: transparent;" />
                                     <TextField fx:id="inputLBP" alignment="CENTER_RIGHT" layoutX="98.0" layoutY="591.0" style="-fx-background-color: transparent;" />
                                     <TextField fx:id="inputDockDensity" alignment="CENTER_RIGHT" layoutX="98.0" layoutY="619.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="98.0" />
-                                    <TextField fx:id="inputLastPort" layoutX="362.0" layoutY="227.0" style="-fx-background-color: transparent;" text="asd" AnchorPane.rightAnchor="40.0" />
-                                    <TextField fx:id="inputNextPort" layoutX="362.0" layoutY="255.0" style="-fx-background-color: transparent;" text="asd" AnchorPane.rightAnchor="40.0" />
-                                    <TextField fx:id="inputSurveyor" layoutX="362.0" layoutY="283.0" style="-fx-background-color: transparent;" text="asd" AnchorPane.rightAnchor="40.0" />
+                                    <TextField fx:id="inputLastPort" layoutX="362.0" layoutY="227.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
+                                    <TextField fx:id="inputNextPort" layoutX="362.0" layoutY="255.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
+                                    <TextField fx:id="inputSurveyor" layoutX="362.0" layoutY="283.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
                                     <TextField fx:id="inputLanding" alignment="CENTER" layoutX="362.0" layoutY="311.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
-                                    <TextField fx:id="inputPort" layoutX="362.0" layoutY="339.0" style="-fx-background-color: transparent;" text="asd" AnchorPane.rightAnchor="40.0" />
+                                    <TextField fx:id="inputPort" layoutX="362.0" layoutY="339.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
                                     <TextField fx:id="inputFordP" alignment="CENTER_RIGHT" layoutX="362.0" layoutY="367.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="130.0" />
                                     <TextField fx:id="inputFordS" alignment="CENTER_RIGHT" layoutX="362.0" layoutY="395.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="130.0" />
                                     <TextField fx:id="inputMidP" alignment="CENTER_RIGHT" layoutX="362.0" layoutY="423.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="130.0" />
@@ -119,6 +120,147 @@
                                     <TextField fx:id="inputDistMid" alignment="CENTER_RIGHT" layoutX="362.0" layoutY="563.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="130.0" />
                                     <TextField fx:id="inputDistAp" alignment="CENTER_RIGHT" layoutX="362.0" layoutY="591.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="130.0" />
                                     <TextField fx:id="inputScaleDensity" alignment="CENTER_RIGHT" layoutX="362.0" layoutY="619.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="130.0" />
+                                    <TextField fx:id="DraughtDepAbove" layoutX="504.0" layoutY="757.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="DisplaceDepAbove" layoutX="504.0" layoutY="785.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="TPCDepAbove" layoutX="505.0" layoutY="814.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="LCFDepAbove" layoutX="504.0" layoutY="843.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="MCTDepAbove" layoutX="504.0" layoutY="872.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="MCT2DepAbove" layoutX="504.0" layoutY="901.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="inputDepLCF" layoutX="366.0" layoutY="845.0" prefHeight="27.0" prefWidth="51.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font name="Arial" size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="inputFordS1" alignment="CENTER_RIGHT" layoutX="525.0" layoutY="395.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
+                                    <TextField fx:id="inputMidP1" alignment="CENTER_RIGHT" layoutX="525.0" layoutY="423.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
+                                    <TextField fx:id="inputMidS1" alignment="CENTER_RIGHT" layoutX="525.0" layoutY="451.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
+                                    <TextField fx:id="inputAftP1" alignment="CENTER_RIGHT" layoutX="525.0" layoutY="479.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
+                                    <TextField fx:id="inputAftS1" alignment="CENTER_RIGHT" layoutX="525.0" layoutY="507.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
+                                    <TextField fx:id="inputDistFp1" alignment="CENTER_RIGHT" layoutX="525.0" layoutY="535.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
+                                    <TextField fx:id="inputDistMid1" alignment="CENTER_RIGHT" layoutX="525.0" layoutY="563.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
+                                    <TextField fx:id="inputDistAp1" alignment="CENTER_RIGHT" layoutX="525.0" layoutY="591.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
+                                    <TextField fx:id="inputCaorrMM" layoutX="224.0" layoutY="678.0" prefHeight="22.0" prefWidth="46.0" style="-fx-background-color: white;" />
+                                    <TextField fx:id="DraughtArrivBelow" layoutX="98.0" layoutY="752.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="DraughtDepBelow" layoutX="421.0" layoutY="756.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="DisplaceDepBelow" layoutX="421.0" layoutY="785.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="TPCDepBelow" layoutX="421.0" layoutY="814.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="LCFDepBelow" layoutX="421.0" layoutY="843.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="MCTDepBelow" layoutX="421.0" layoutY="872.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="MCT2DepBelow" layoutX="421.0" layoutY="901.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="DisplaceArrivBelow" layoutX="98.0" layoutY="781.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="TPCArrivBelow" layoutX="98.0" layoutY="810.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="LCFArrivBelow" layoutX="98.0" layoutY="839.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="MCTArrivBelow" layoutX="98.0" layoutY="868.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="MCT2ArrivBelow" layoutX="98.0" layoutY="897.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="DraughtArrivAbove" layoutX="181.0" layoutY="753.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="DisplaceArrivAbove" layoutX="181.0" layoutY="781.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="TPCArrivAbove" layoutX="182.0" layoutY="810.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="LCFArrivAbove" layoutX="181.0" layoutY="839.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="MCTArrivAbove" layoutX="181.0" layoutY="868.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="MCT2ArrivAbove" layoutX="181.0" layoutY="897.0" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: white;">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="inputArrivLCF" layoutX="43.0" layoutY="841.0" prefHeight="27.0" prefWidth="51.0" style="-fx-background-color: white;" text="a">
+                                       <font>
+                                          <Font name="Arial" size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="inputDockDensity1" alignment="CENTER_RIGHT" layoutX="184.0" layoutY="619.0" prefWidth="80.0" style="-fx-background-color: transparent;" />
+                                    <TextField fx:id="inputScaleDensity1" alignment="CENTER_RIGHT" layoutX="520.0" layoutY="619.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
                                     <Line endX="167.0" layoutX="98.0" layoutY="254.0" />
                                     <Line endX="167.0" layoutX="98.0" layoutY="310.0" />
                                     <Line endX="167.0" layoutX="98.0" layoutY="338.0" />
@@ -151,7 +293,6 @@
                                     <DatePicker fx:id="datePick" layoutX="98.0" layoutY="257.0" prefHeight="27.0" prefWidth="167.0" />
                                     <Label layoutX="9.0" layoutY="662.0" text="If the hydrostatics are from top of the keel" />
                                     <Label layoutX="9.0" layoutY="679.0" text="please enter keel correction in mm" />
-                                    <TextField fx:id="inputCaorrMM" layoutX="224.0" layoutY="678.0" prefHeight="27.0" prefWidth="46.0" text="22" />
                                     <Label alignment="CENTER" layoutX="10.0" layoutY="696.0" text="Hydrostatic Data">
                                        <font>
                                           <Font size="18.0" />
@@ -173,155 +314,16 @@
                                     <Label layoutX="9.0" layoutY="846.0" text="LCF" />
                                     <Label layoutX="9.0" layoutY="874.0" text="MCT+50cm" />
                                     <Label layoutX="9.0" layoutY="902.0" text="MCT-50cm" />
-                                    <TextField fx:id="DraughtArrivBelow" layoutX="98.0" layoutY="752.0" prefHeight="27.0" prefWidth="82.0" text="1">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="DisplaceArrivBelow" layoutX="98.0" layoutY="781.0" prefHeight="27.0" prefWidth="82.0" text="21">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="TPCArrivBelow" layoutX="98.0" layoutY="810.0" prefHeight="27.0" prefWidth="82.0" text="1">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="LCFArrivBelow" layoutX="98.0" layoutY="839.0" prefHeight="27.0" prefWidth="82.0" text="2">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="MCTArrivBelow" layoutX="98.0" layoutY="868.0" prefHeight="27.0" prefWidth="82.0" text="2">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="MCT2ArrivBelow" layoutX="98.0" layoutY="897.0" prefHeight="27.0" prefWidth="82.0" text="1">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
                                     <Label layoutX="114.0" layoutY="733.0" text="Below" />
                                     <Label layoutX="203.0" layoutY="733.0" text="Above" />
-                                    <TextField fx:id="DraughtArrivAbove" layoutX="181.0" layoutY="753.0" prefHeight="27.0" prefWidth="82.0" text="2">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="DisplaceArrivAbove" layoutX="181.0" layoutY="781.0" prefHeight="27.0" prefWidth="82.0" text="23">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="TPCArrivAbove" layoutX="182.0" layoutY="810.0" prefHeight="27.0" prefWidth="82.0" text="1">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="LCFArrivAbove" layoutX="181.0" layoutY="839.0" prefHeight="27.0" prefWidth="82.0" text="2">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="MCTArrivAbove" layoutX="181.0" layoutY="868.0" prefHeight="27.0" prefWidth="82.0" text="2">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="MCT2ArrivAbove" layoutX="181.0" layoutY="897.0" prefHeight="27.0" prefWidth="82.0" text="1">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="inputArrivLCF" layoutX="43.0" layoutY="841.0" prefHeight="27.0" prefWidth="51.0" text="a">
-                                       <font>
-                                          <Font name="Arial" size="11.0" />
-                                       </font>
-                                    </TextField>
                                     <Label layoutX="331.0" layoutY="762.0" text="Draught" />
                                     <Label layoutX="331.0" layoutY="790.0" text="Displacement" />
                                     <Label layoutX="331.0" layoutY="819.0" text="TPC" />
                                     <Label layoutX="332.0" layoutY="850.0" text="LCF" />
                                     <Label layoutX="332.0" layoutY="878.0" text="MCT+50cm" />
                                     <Label layoutX="332.0" layoutY="906.0" text="MCT-50cm" />
-                                    <TextField fx:id="DraughtDepBelow" layoutX="421.0" layoutY="756.0" prefHeight="27.0" prefWidth="82.0" text="2">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="DisplaceDepBelow" layoutX="421.0" layoutY="785.0" prefHeight="27.0" prefWidth="82.0" text="40">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="TPCDepBelow" layoutX="421.0" layoutY="814.0" prefHeight="27.0" prefWidth="82.0" text="4">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="LCFDepBelow" layoutX="421.0" layoutY="843.0" prefHeight="27.0" prefWidth="82.0" text="3">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="MCTDepBelow" layoutX="421.0" layoutY="872.0" prefHeight="27.0" prefWidth="82.0" text="1">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="MCT2DepBelow" layoutX="421.0" layoutY="901.0" prefHeight="27.0" prefWidth="82.0" text="1">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
                                     <Label layoutX="437.0" layoutY="737.0" text="Below" />
                                     <Label layoutX="526.0" layoutY="737.0" text="Above" />
-                                    <TextField fx:id="DraughtDepAbove" layoutX="504.0" layoutY="757.0" prefHeight="27.0" prefWidth="82.0" text="3">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="DisplaceDepAbove" layoutX="504.0" layoutY="785.0" prefHeight="27.0" prefWidth="82.0" text="50">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="TPCDepAbove" layoutX="505.0" layoutY="814.0" prefHeight="27.0" prefWidth="82.0" text="4">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="LCFDepAbove" layoutX="504.0" layoutY="843.0" prefHeight="27.0" prefWidth="82.0" text="3">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="MCTDepAbove" layoutX="504.0" layoutY="872.0" prefHeight="27.0" prefWidth="82.0" text="1">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="MCT2DepAbove" layoutX="504.0" layoutY="901.0" prefHeight="27.0" prefWidth="82.0">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="inputDepLCF" layoutX="366.0" layoutY="845.0" prefHeight="27.0" prefWidth="51.0" text="a">
-                                       <font>
-                                          <Font name="Arial" size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="inputFordP1" alignment="CENTER_RIGHT" layoutX="525.0" layoutY="367.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
-                                    <TextField fx:id="inputFordS1" alignment="CENTER_RIGHT" layoutX="525.0" layoutY="395.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
-                                    <TextField fx:id="inputMidP1" alignment="CENTER_RIGHT" layoutX="525.0" layoutY="423.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
-                                    <TextField fx:id="inputMidS1" alignment="CENTER_RIGHT" layoutX="525.0" layoutY="451.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
-                                    <TextField fx:id="inputAftP1" alignment="CENTER_RIGHT" layoutX="525.0" layoutY="479.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
-                                    <TextField fx:id="inputAftS1" alignment="CENTER_RIGHT" layoutX="525.0" layoutY="507.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
-                                    <TextField fx:id="inputDistFp1" alignment="CENTER_RIGHT" layoutX="525.0" layoutY="535.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
-                                    <TextField fx:id="inputDistMid1" alignment="CENTER_RIGHT" layoutX="525.0" layoutY="563.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
-                                    <TextField fx:id="inputDistAp1" alignment="CENTER_RIGHT" layoutX="525.0" layoutY="591.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
                                     <Line endX="80.0" layoutX="537.5" layoutY="394.0" AnchorPane.rightAnchor="40.0" />
                                     <Line endX="80.0" layoutX="537.5" layoutY="422.0" AnchorPane.rightAnchor="40.0" />
                                     <Line endX="80.0" layoutX="537.5" layoutY="450.0" AnchorPane.rightAnchor="40.0" />
@@ -331,10 +333,36 @@
                                     <Line endX="80.0" layoutX="537.5" layoutY="562.0" AnchorPane.rightAnchor="40.0" />
                                     <Line endX="80.0" layoutX="537.5" layoutY="590.0" AnchorPane.rightAnchor="40.0" />
                                     <Line endX="80.0" layoutX="537.5" layoutY="618.0" AnchorPane.rightAnchor="40.0" />
-                                    <TextField fx:id="inputDockDensity1" alignment="CENTER_RIGHT" layoutX="184.0" layoutY="619.0" prefWidth="80.0" style="-fx-background-color: transparent;" />
                                     <Line endX="80.0" layoutX="184.0" layoutY="646.0" />
-                                    <TextField fx:id="inputScaleDensity1" alignment="CENTER_RIGHT" layoutX="520.0" layoutY="619.0" prefWidth="80.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="40.0" />
                                     <Line endX="80.0" layoutX="519.0" layoutY="646.0" />
+                                    <Button fx:id="btnCalculateAll" layoutX="445.0" layoutY="936.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="121.0" text="Calculate" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="74.0" />
+                                    <Line endX="80.0" layoutX="506.0" layoutY="784.0" />
+                                    <Line endX="80.0" layoutX="506.0" layoutY="812.0" />
+                                    <Line endX="80.0" layoutX="506.0" layoutY="840.0" />
+                                    <Line endX="80.0" layoutX="506.0" layoutY="868.0" />
+                                    <Line endX="80.0" layoutX="506.0" layoutY="896.0" />
+                                    <Line endX="80.0" layoutX="506.0" layoutY="926.0" />
+                                    <Line endX="80.0" layoutX="422.0" layoutY="784.0" />
+                                    <Line endX="80.0" layoutX="422.0" layoutY="812.0" />
+                                    <Line endX="80.0" layoutX="422.0" layoutY="840.0" />
+                                    <Line endX="80.0" layoutX="422.0" layoutY="868.0" />
+                                    <Line endX="80.0" layoutX="422.0" layoutY="896.0" />
+                                    <Line endX="80.0" layoutX="422.0" layoutY="926.0" />
+                                    <Line endX="80.0" layoutX="99.0" layoutY="780.0" />
+                                    <Line endX="80.0" layoutX="99.0" layoutY="808.0" />
+                                    <Line endX="80.0" layoutX="99.0" layoutY="836.0" />
+                                    <Line endX="80.0" layoutX="99.0" layoutY="864.0" />
+                                    <Line endX="80.0" layoutX="99.0" layoutY="892.0" />
+                                    <Line endX="80.0" layoutX="99.0" layoutY="922.0" />
+                                    <Line endX="80.0" layoutX="183.0" layoutY="780.0" />
+                                    <Line endX="80.0" layoutX="183.0" layoutY="808.0" />
+                                    <Line endX="80.0" layoutX="183.0" layoutY="836.0" />
+                                    <Line endX="80.0" layoutX="183.0" layoutY="864.0" />
+                                    <Line endX="80.0" layoutX="183.0" layoutY="892.0" />
+                                    <Line endX="80.0" layoutX="183.0" layoutY="922.0" />
+                                    <Line endX="50.0" layoutX="43.0" layoutY="867.0" />
+                                    <Line endX="50.0" layoutX="366.0" layoutY="872.0" />
+                                    <Line endX="40.0" layoutX="227.0" layoutY="703.0" />
                                  </children>
                               </AnchorPane>
                            </content>
@@ -370,7 +398,7 @@
                                                       <Font name="Courier New Bold" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <Label fx:id="labelDate" alignment="CENTER" layoutX="512.0" text="Label">
+                                                <Label fx:id="labelDate" alignment="CENTER" layoutX="512.0">
                                                    <font>
                                                       <Font name="Courier New" size="13.0" />
                                                    </font>
@@ -432,12 +460,12 @@
                                                       <Font name="Courier New Bold" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <Label fx:id="labelSoundTrim1" alignment="CENTER_RIGHT" layoutX="310.0" layoutY="29.0" text="Label">
+                                                <Label fx:id="labelSoundTrim1" alignment="CENTER_RIGHT" layoutX="310.0" layoutY="29.0">
                                                    <font>
                                                       <Font name="Courier New" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <Label fx:id="labelSoundTrim2" alignment="CENTER_RIGHT" layoutX="603.0" layoutY="29.0" text="Label">
+                                                <Label fx:id="labelSoundTrim2" alignment="CENTER_RIGHT" layoutX="603.0" layoutY="29.0">
                                                    <font>
                                                       <Font name="Courier New" size="13.0" />
                                                    </font>
@@ -711,26 +739,26 @@
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="labelSurvPortAft" layoutX="190.0" layoutY="121.0" text="Label" />
-                                    <Label fx:id="labelSurvPortMid" layoutX="263.0" layoutY="121.0" text="Label" />
-                                    <Label fx:id="labelSurvPortFord" layoutX="327.0" layoutY="121.0" text="Label" />
-                                    <Label fx:id="labelSurvBoardAft" layoutX="191.0" layoutY="138.0" text="Label" />
-                                    <Label fx:id="labelSurvBoardMid" layoutX="264.0" layoutY="138.0" text="Label" />
-                                    <Label fx:id="labelSurvBoardFord" layoutX="328.0" layoutY="138.0" text="Label" />
-                                    <Label fx:id="labelMeanAft" layoutX="191.0" layoutY="155.0" text="Label" />
-                                    <Label fx:id="labelMeanMid" layoutX="264.0" layoutY="155.0" text="Label" />
-                                    <Label fx:id="labelMeanFord" layoutX="328.0" layoutY="155.0" text="Label" />
-                                    <Label fx:id="labelCorrAft" layoutX="191.0" layoutY="172.0" text="Label" />
-                                    <Label fx:id="labelCorrMid" layoutX="264.0" layoutY="172.0" text="Label" />
-                                    <Label fx:id="labelCorrFord" layoutX="328.0" layoutY="172.0" text="Label" />
-                                    <Label fx:id="labelDraughtAft" layoutX="191.0" layoutY="189.0" text="Label" />
-                                    <Label fx:id="labelDraughtMid" layoutX="264.0" layoutY="189.0" text="Label" />
-                                    <Label fx:id="labelDraughtFord" layoutX="328.0" layoutY="189.0" text="Label" />
-                                    <Label fx:id="labelthreefourAr" layoutX="264.0" layoutY="206.0" text="Label" />
-                                    <Label fx:id="labelDisp" layoutX="264.0" layoutY="223.0" text="Label" />
-                                    <Label fx:id="labelTrimCorA" layoutX="264.0" layoutY="240.0" text="Label" />
-                                    <Label fx:id="labelCorDisp" layoutX="264.0" layoutY="274.0" text="Label" />
-                                    <Label fx:id="labelTrimCorB" layoutX="264.0" layoutY="257.0" text="Label" />
+                                    <Label fx:id="labelSurvPortAft" layoutX="190.0" layoutY="121.0" />
+                                    <Label fx:id="labelSurvPortMid" layoutX="263.0" layoutY="121.0" />
+                                    <Label fx:id="labelSurvPortFord" layoutX="327.0" layoutY="121.0" />
+                                    <Label fx:id="labelSurvBoardAft" layoutX="191.0" layoutY="138.0" />
+                                    <Label fx:id="labelSurvBoardMid" layoutX="264.0" layoutY="138.0" />
+                                    <Label fx:id="labelSurvBoardFord" layoutX="328.0" layoutY="138.0" />
+                                    <Label fx:id="labelMeanAft" layoutX="191.0" layoutY="155.0" />
+                                    <Label fx:id="labelMeanMid" layoutX="264.0" layoutY="155.0" />
+                                    <Label fx:id="labelMeanFord" layoutX="328.0" layoutY="155.0" />
+                                    <Label fx:id="labelCorrAft" layoutX="191.0" layoutY="172.0" />
+                                    <Label fx:id="labelCorrMid" layoutX="264.0" layoutY="172.0" />
+                                    <Label fx:id="labelCorrFord" layoutX="328.0" layoutY="172.0" />
+                                    <Label fx:id="labelDraughtAft" layoutX="191.0" layoutY="189.0" />
+                                    <Label fx:id="labelDraughtMid" layoutX="264.0" layoutY="189.0" />
+                                    <Label fx:id="labelDraughtFord" layoutX="328.0" layoutY="189.0" />
+                                    <Label fx:id="labelthreefourAr" layoutX="264.0" layoutY="206.0" />
+                                    <Label fx:id="labelDisp" layoutX="264.0" layoutY="223.0" />
+                                    <Label fx:id="labelTrimCorA" layoutX="264.0" layoutY="240.0" />
+                                    <Label fx:id="labelCorDisp" layoutX="264.0" layoutY="274.0" />
+                                    <Label fx:id="labelTrimCorB" layoutX="264.0" layoutY="257.0" />
                                     <Label fx:id="labelDockDensAriv" layoutX="263.0" layoutY="291.0" text="0.0" />
                                     <Label fx:id="labelDispDens" layoutX="263.0" layoutY="308.0" text="0.0" />
                                     <Label fx:id="labelVariables" layoutX="263.0" layoutY="325.0" text="0.0" />
@@ -835,26 +863,26 @@
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="labelSurvPortAft1" layoutX="190.0" layoutY="391.0" text="Label" />
-                                    <Label fx:id="labelSurvPortMid1" layoutX="263.0" layoutY="391.0" text="Label" />
-                                    <Label fx:id="labelSurvPortFord1" layoutX="327.0" layoutY="391.0" text="Label" />
-                                    <Label fx:id="labelSurvBoardAft1" layoutX="191.0" layoutY="408.0" text="Label" />
-                                    <Label fx:id="labelSurvBoardMid1" layoutX="264.0" layoutY="408.0" text="Label" />
-                                    <Label fx:id="labelSurvBoardFord1" layoutX="328.0" layoutY="408.0" text="Label" />
-                                    <Label fx:id="labelMeanAft1" layoutX="191.0" layoutY="425.0" text="Label" />
-                                    <Label fx:id="labelMeanMid1" layoutX="264.0" layoutY="425.0" text="Label" />
-                                    <Label fx:id="labelMeanFord1" layoutX="328.0" layoutY="425.0" text="Label" />
-                                    <Label fx:id="labelCorrAft1" layoutX="191.0" layoutY="442.0" text="Label" />
-                                    <Label fx:id="labelCorrMid1" layoutX="264.0" layoutY="442.0" text="Label" />
-                                    <Label fx:id="labelCorrFord1" layoutX="328.0" layoutY="442.0" text="Label" />
-                                    <Label fx:id="labelDraughtAft1" layoutX="191.0" layoutY="459.0" text="Label" />
-                                    <Label fx:id="labelDraughtMid1" layoutX="264.0" layoutY="459.0" text="Label" />
-                                    <Label fx:id="labelDraughtFord1" layoutX="328.0" layoutY="459.0" text="Label" />
-                                    <Label fx:id="labelthreefourDe" layoutX="264.0" layoutY="476.0" text="Label" />
-                                    <Label fx:id="labelDisp1" layoutX="264.0" layoutY="493.0" text="Label" />
-                                    <Label fx:id="labelTrimCorA1" layoutX="264.0" layoutY="510.0" text="Label" />
+                                    <Label fx:id="labelSurvPortAft1" layoutX="190.0" layoutY="391.0" />
+                                    <Label fx:id="labelSurvPortMid1" layoutX="263.0" layoutY="391.0" />
+                                    <Label fx:id="labelSurvPortFord1" layoutX="327.0" layoutY="391.0" />
+                                    <Label fx:id="labelSurvBoardAft1" layoutX="191.0" layoutY="408.0" />
+                                    <Label fx:id="labelSurvBoardMid1" layoutX="264.0" layoutY="408.0" />
+                                    <Label fx:id="labelSurvBoardFord1" layoutX="328.0" layoutY="408.0" />
+                                    <Label fx:id="labelMeanAft1" layoutX="191.0" layoutY="425.0" />
+                                    <Label fx:id="labelMeanMid1" layoutX="264.0" layoutY="425.0" />
+                                    <Label fx:id="labelMeanFord1" layoutX="328.0" layoutY="425.0" />
+                                    <Label fx:id="labelCorrAft1" layoutX="191.0" layoutY="442.0" />
+                                    <Label fx:id="labelCorrMid1" layoutX="264.0" layoutY="442.0" />
+                                    <Label fx:id="labelCorrFord1" layoutX="328.0" layoutY="442.0" />
+                                    <Label fx:id="labelDraughtAft1" layoutX="191.0" layoutY="459.0" />
+                                    <Label fx:id="labelDraughtMid1" layoutX="264.0" layoutY="459.0" />
+                                    <Label fx:id="labelDraughtFord1" layoutX="328.0" layoutY="459.0" />
+                                    <Label fx:id="labelthreefourDe" layoutX="264.0" layoutY="476.0" />
+                                    <Label fx:id="labelDisp1" layoutX="264.0" layoutY="493.0" />
+                                    <Label fx:id="labelTrimCorA1" layoutX="264.0" layoutY="510.0" />
                                     <Label fx:id="labelCorDisp1" layoutX="264.0" layoutY="544.0" text="0.0" />
-                                    <Label fx:id="labelTrimCorB1" layoutX="264.0" layoutY="527.0" text="Label" />
+                                    <Label fx:id="labelTrimCorB1" layoutX="264.0" layoutY="527.0" />
                                     <Label fx:id="labelDockDensDep" layoutX="263.0" layoutY="561.0" text="0.0" />
                                     <Label fx:id="labelDispDens1" layoutX="263.0" layoutY="578.0" text="0.0" />
                                     <Label fx:id="labelVariables1" layoutX="263.0" layoutY="595.0" text="0.0" />
@@ -886,7 +914,7 @@
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="labelSurveyer" layoutX="190.0" layoutY="648.0" text="Label" />
+                                    <Label fx:id="labelSurveyer" layoutX="190.0" layoutY="648.0" />
                                     <Line endX="380.0" layoutX="83.0" layoutY="665.0" AnchorPane.leftAnchor="0.0" />
                                     <Label layoutX="14.0" layoutY="666.0" text="Dist of Draught Marks">
                                        <font>
@@ -899,21 +927,21 @@
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="labelFromAP" layoutX="214.0" layoutY="684.0" text="Label" />
+                                    <Label fx:id="labelFromAP" layoutX="214.0" layoutY="684.0" />
                                     <Line endX="380.0" layoutX="83.0" layoutY="701.0" AnchorPane.leftAnchor="0.0" />
                                     <Label layoutX="14.0" layoutY="702.0" text="From Mid Perpendicular">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="labelFromMP" layoutX="214.0" layoutY="702.0" text="Label" />
+                                    <Label fx:id="labelFromMP" layoutX="214.0" layoutY="702.0" />
                                     <Line endX="380.0" layoutX="83.0" layoutY="719.0" AnchorPane.leftAnchor="0.0" />
                                     <Label layoutX="14.0" layoutY="720.0" text="From Ford Perpendicular">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="labelFromFP" layoutX="214.0" layoutY="720.0" text="Label" />
+                                    <Label fx:id="labelFromFP" layoutX="214.0" layoutY="720.0" />
                                     <Line endX="380.0" layoutX="83.0" layoutY="737.0" AnchorPane.leftAnchor="0.0" />
                                     <Label layoutX="208.0" layoutY="666.0" text="Arrival">
                                        <font>
@@ -925,9 +953,9 @@
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="labelFromAP1" layoutX="321.0" layoutY="684.0" text="Label" />
-                                    <Label fx:id="labelFromMP1" layoutX="321.0" layoutY="702.0" text="Label" />
-                                    <Label fx:id="labelFromFP1" layoutX="321.0" layoutY="720.0" text="Label" />
+                                    <Label fx:id="labelFromAP1" layoutX="321.0" layoutY="684.0" />
+                                    <Label fx:id="labelFromMP1" layoutX="321.0" layoutY="702.0" />
+                                    <Label fx:id="labelFromFP1" layoutX="321.0" layoutY="720.0" />
                                     <Label layoutX="394.0" layoutY="702.0" text="Marks forward of perpendicular +ive" />
                                     <Label layoutX="394.0" layoutY="720.0" text="Marks aft of perpendicular -ive" />
                                     <Line endY="238.0" layoutX="381.0" layoutY="120.0" />
@@ -937,49 +965,49 @@
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="labelLightShip1" layoutX="642.0" layoutY="120.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelLightShip1" layoutX="642.0" layoutY="120.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="381.0" layoutY="138.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="397.0" layoutY="139.0" text="LBP" AnchorPane.leftAnchor="390.0">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="labelLBP" layoutX="643.0" layoutY="138.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelLBP" layoutX="643.0" layoutY="138.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="390.0" layoutY="155.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="398.0" layoutY="155.0" text="Tpc" AnchorPane.leftAnchor="398.0">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="labelTPC" layoutX="643.0" layoutY="154.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelTPC" layoutX="643.0" layoutY="154.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="390.0" layoutY="171.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="396.0" layoutY="172.0" text="Lcf-(Ford)" AnchorPane.leftAnchor="390.0">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="labelLcf" layoutX="643.0" layoutY="172.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelLcf" layoutX="643.0" layoutY="172.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="390.0" layoutY="189.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="395.0" layoutY="189.0" text="Trim" AnchorPane.leftAnchor="390.0">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="labelTrim" layoutX="643.0" layoutY="189.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelTrim" layoutX="643.0" layoutY="189.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="381.0" layoutY="206.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="395.0" layoutY="207.0" text="Mct+" AnchorPane.leftAnchor="390.0">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="labelMctPlus" layoutX="643.0" layoutY="206.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelMctPlus" layoutX="643.0" layoutY="206.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="381.0" layoutY="223.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="396.0" layoutY="224.0" text="Mct-" AnchorPane.leftAnchor="390.0">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="labelMctMinus" layoutX="642.0" layoutY="224.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelMctMinus" layoutX="642.0" layoutY="224.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="381.0" layoutY="240.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="395.0" layoutY="273.0" text="Oil" AnchorPane.leftAnchor="390.0">
                                        <font>
@@ -1021,35 +1049,35 @@
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="labelTPC1" layoutX="506.0" layoutY="432.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelTPC1" layoutX="506.0" layoutY="432.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="395.0" layoutY="449.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="401.0" layoutY="450.0" text="Lcf-(Ford)" AnchorPane.leftAnchor="390.0">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="labelLcf1" layoutX="506.0" layoutY="450.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelLcf1" layoutX="506.0" layoutY="450.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="395.0" layoutY="467.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="400.0" layoutY="467.0" text="Trim" AnchorPane.leftAnchor="390.0">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="labelTrim1" layoutX="506.0" layoutY="467.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelTrim1" layoutX="506.0" layoutY="467.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="386.0" layoutY="484.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="400.0" layoutY="485.0" text="Mct+" AnchorPane.leftAnchor="390.0">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="labelMctPlus1" layoutX="506.0" layoutY="484.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelMctPlus1" layoutX="506.0" layoutY="484.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="386.0" layoutY="501.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="401.0" layoutY="502.0" text="Mct-" AnchorPane.leftAnchor="390.0">
                                        <font>
                                           <Font name="Arial Bold" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="labelMctMinus1" layoutX="505.0" layoutY="502.0" text="Label" AnchorPane.leftAnchor="500.0" />
+                                    <Label fx:id="labelMctMinus1" layoutX="505.0" layoutY="502.0" AnchorPane.leftAnchor="500.0" />
                                     <Line endX="160.0" layoutX="386.0" layoutY="518.0" AnchorPane.leftAnchor="380.5" />
                                     <Label layoutX="400.0" layoutY="551.0" text="Oil" AnchorPane.leftAnchor="390.0">
                                        <font>
@@ -1096,7 +1124,10 @@
             </Tab>
             <Tab text="Visual">
               <content>
-                <AnchorPane fx:id="visualPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <AnchorPane fx:id="visualPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutX="40.0" layoutY="78.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children></AnchorPane>
               </content>
             </Tab>
           <Tab fx:id="tabImage" text="Накладные">
@@ -1136,6 +1167,16 @@
                   </AnchorPane>
             </content>
           </Tab>
+           <Tab text="Canals">
+              <content>
+                 <AnchorPane fx:id="visualPane1" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+           </Tab>
+            <Tab fx:id="tabHelp" text="Справка">
+               <content>
+                  <AnchorPane fx:id="visualPane2" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
         </tabs>
       </TabPane>
    </children>

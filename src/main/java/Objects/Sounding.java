@@ -8,12 +8,15 @@ import javafx.beans.property.StringProperty;
  * Created by admin on 02.06.17.
  */
 public class Sounding {
-    private SimpleStringProperty Sounding;
-    private SimpleDoubleProperty Tonnes;
+    private SimpleStringProperty Sounding = new SimpleStringProperty();
+    private SimpleDoubleProperty Tonnes = new SimpleDoubleProperty();
 
     public Sounding(String sounding, Double tonnes) {
         this.Sounding =new SimpleStringProperty(sounding);
         this.Tonnes = new SimpleDoubleProperty(tonnes);
+    }
+
+    public Sounding() {
     }
 
     public String getSounding() {

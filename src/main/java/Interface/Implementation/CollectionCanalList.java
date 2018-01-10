@@ -18,6 +18,7 @@ public class CollectionCanalList {
 
     public void setCanalCollectionData(){
 
+
         this.canalCollection.add(new Canal("Беломорско-Балтийский канал", 227.0, 135.0, 14.3, 3.5));
         this.canalCollection.add(new Canal("Канал Рейн-Майн-Дунай", 171.0, 190.0, 11.45, 4.0));
         this.canalCollection.add(new Canal("Суэцкий канал", 193.3, 350.0, 45.0, 24.0));
